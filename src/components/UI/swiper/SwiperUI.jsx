@@ -23,15 +23,33 @@ const SwiperUI = () => {
   const swiperRef = useRef();
 
   const [popularElement, setPopularElement] = useState();
+  const [windowWidth, setWindowWidth] = useState(
+    document.documentElement.clientWidth
+  );
+  const [slidesPV, setSlidesPerView] = useState(5);
+
+  const setSlides = () => {
+    if (windowWidth >= 1024) {
+      setSlidesPerView(5);
+    } else if ((windowWidth >= 600) & (windowWidth < 1024)) {
+      setSlidesPerView(3);
+    } else {
+      setSlidesPerView(2);
+    }
+  };
 
   useEffect(() => {
+    setSlides();
+    window.onresize = () => {
+      setWindowWidth(document.documentElement.clientWidth);
+    };
     setPopularElement(document.getElementById("popular"));
-  }, []);
+  }, [windowWidth]);
 
   return (
     <Swiper
       spaceBetween={20}
-      slidesPerView={5}
+      slidesPerView={slidesPV}
       modules={[Navigation]}
       className='mySwiper'
       onSwiper={(swiper) => {

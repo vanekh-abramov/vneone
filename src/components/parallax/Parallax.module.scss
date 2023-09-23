@@ -22,8 +22,9 @@
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 1040px;
+  width: 900px;
   height: 310px;
+  padding: 1%;
   border-radius: 25px;
   background: linear-gradient(
     136deg,
@@ -31,6 +32,10 @@
     rgba(255, 255, 255, 0) 100%
   );
   backdrop-filter: blur(12.5px);
+
+  @media (max-width: 1024px) {
+    width: 80%;
+  }
 
   .inner_text {
     margin: auto;
@@ -49,5 +54,9 @@
     width: 300px;
     height: 265px;
     border-radius: 20px;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 }

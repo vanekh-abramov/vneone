@@ -42,6 +42,10 @@
       display: flex;
       margin: auto;
       grid-area: control;
+
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
   }
 }

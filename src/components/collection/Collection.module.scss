@@ -29,6 +29,30 @@
     grid-template-areas:
       ". . . ."
       ". . . .";
+
+    @media (max-width: 1090px) {
+      gap: 17px 17px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        ". . ."
+        ". . .";
+    }
+
+    @media (max-width: 800px) {
+      gap: 17px 17px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        ". ."
+        ". .";
+    }
+
+    @media (max-width: 550px) {
+      gap: 17px 17px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "."
+        ".";
+    }
     .card {
       .card_photo {
         width: 244.98px;
