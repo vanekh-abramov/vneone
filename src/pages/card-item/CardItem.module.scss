@@ -1,0 +1,190 @@
+.container {
+  position: relative;
+  max-width: 1040px;
+  margin: 172px auto 50px;
+  padding: 15px;
+  .title {
+    margin-bottom: 50px;
+    text-align: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    .content_image {
+      max-width: 510px;
+      border-radius: 25px;
+    }
+    .content_inner {
+      margin-left: 20px;
+      .desc {
+        color: #000;
+        font-family: Comfortaa;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .size_mesh {
+        text-align: center;
+        margin: 16px 0;
+        padding: 14px 20px;
+        border-radius: 25px;
+        border: 1.266px solid #3f3f3f;
+        color: #3f3f3f;
+        font-family: Comfortaa;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        cursor: pointer;
+      }
+      .size_switcher {
+        .switcher_text {
+          color: #181818;
+          font-family: Comfortaa;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .checkbox_wrapper {
+          margin: 15px 0;
+          // label {
+          //   .modern_radio {
+          //   }
+          //   span {
+          //   }
+          // }
+        }
+        .basket_control {
+          display: flex;
+          .count_control {
+            display: flex;
+            align-items: center;
+            .counter {
+              max-width: 58px;
+              height: 40px;
+              border-top: 2px solid #000;
+              border-bottom: 2px solid #000;
+              border-left: none;
+              border-right: none;
+              color: #000;
+              font-family: Comfortaa;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              overflow: hidden;
+              text-align: center;
+              outline: none;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            // .decrement {
+            // }
+            // .increment {
+            // }
+          }
+          .add_to_cart {
+            margin-left: 20px;
+            padding: 12px 40px;
+            border-radius: 250px;
+            background: #181818;
+            color: #fff;
+            font-family: Comfortaa;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+.checkbox_wrapper {
+  margin: 10px 0 15px;
+}
+.form_radio_group {
+  display: inline-block;
+  overflow: hidden;
+}
+.form_radio_group-item {
+  display: inline-block;
+}
+.form_radio_group input[type="radio"] {
+  display: none;
+}
+.form_radio_group label {
+  background-color: #fff;
+  text-align: center;
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  cursor: pointer;
+  line-height: 34px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  border-right: none;
+  user-select: none;
+}
+
+.mesh_wrapper {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // width: 100dvw;
+  // height: 100dvh;
+  background-color: #3f3f3f;
+  opacity: 0.6;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.mesh_image {
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+// .form_radio_group .form_radio_group-item:first-child label {
+//   border-radius: 6px 0 0 6px;
+// }
+// .form_radio_group .form_radio_group-item:last-child label {
+//   border-radius: 0 6px 6px 0;
+//   border-right: 1px solid #999;
+// }
+
+/* Checked */
+.form_radio_group input[type="radio"]:checked + label {
+  background: #000000;
+  color: #fff;
+}
+
+/* Hover */
+.form_radio_group label:hover {
+  color: #666;
+}
+
+/* Disabled */
+.form_radio_group input[type="radio"]:disabled + label {
+  background: #efefef;
+  color: #666;
+}

@@ -1,0 +1,50 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  .title {
+    text-align: center;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+  }
+  .youtube {
+    margin: 0 auto 0 0;
+    .video {
+      border-radius: 25px;
+    }
+  }
+
+  .social_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .links_content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .link_box {
+        display: flex;
+        align-items: center;
+        .link_icon {
+          width: 85px;
+          margin-right: 5px;
+        }
+        .link_text {
+          color: #000;
+          font-family: Comfortaa;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.swiper {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.prev {
+  z-index: 99;
+  position: absolute;
+  color: #000;
+  top: 40%;
+  left: -20px;
+  cursor: pointer;
+}
+
+.next {
+  z-index: 99;
+  position: absolute;
+  color: #000;
+  top: 40%;
+  right: -20px;
+  cursor: pointer;
+}
