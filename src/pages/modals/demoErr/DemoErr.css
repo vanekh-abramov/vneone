@@ -1,0 +1,108 @@
+/* svg {
+  height: 90vh;
+  display: block;
+  margin: auto;
+} */
+
+.SVG {
+  position: absolute;
+  height: 250px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -100px;
+  right: 0;
+}
+
+#click_text {
+  position: absolute;
+  top: 20px;
+  width: 99%;
+  text-align: center;
+  font-size: 32px;
+  font-family: monospace;
+  color: #44403a;
+  font-weight: bold;
+  text-shadow: -2px 3px 3px #0000005c;
+}
+
+#Pulse {
+  fill: none;
+  stroke: #D38911;
+  stroke-width: 5;
+  transform: rotateX(80deg);
+}
+
+#side {
+  fill: #87872B;
+}
+
+#front {
+  fill: #CEB629;
+}
+
+#light {
+  fill: #EBE242;
+}
+
+.particles {
+  fill: none;
+  stroke: #DD913E;
+  stroke-width: 0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 12, 200;
+  opacity: .7;
+}
+
+.Particles_active .particles {
+  animation: sparks .7s;
+}
+
+#light-mask rect {
+  animation: highlight 4s infinite;
+}
+
+._transformer {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes highlight {
+  0% {
+    transform: translate(-100px, 0) rotate(-50deg);
+  }
+
+  30% {
+    transform: translate(100px, 0) rotate(-50deg);
+  }
+
+  100% {
+    transform: translate(100px, 0) rotate(-50deg);
+  }
+}
+
+@keyframes idle {
+  0% {
+    transform: translate(0, -5px);
+  }
+
+  100% {
+    transform: translate(0, 5px);
+  }
+}
+
+@keyframes sparks {
+  0% {
+    stroke-dasharray: 20, 200;
+    stroke-width: 5px;
+  }
+
+  100% {
+    stroke-dasharray: 4, 200;
+    stroke-width: 0px;
+    stroke-dashoffset: -180;
+  }
+}

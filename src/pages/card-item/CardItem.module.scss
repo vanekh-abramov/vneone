@@ -176,6 +176,10 @@
   left: 0;
   right: 0;
   margin: auto;
+
+  @media (max-width: 650px) {
+    width: 360px;
+  }
 }
 
 // .form_radio_group .form_radio_group-item:first-child label {

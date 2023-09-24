@@ -24,7 +24,7 @@ const SwiperSlider = () => {
         disableOnInteraction: false,
       }}
       modules={[Autoplay, EffectFade, Pagination, Navigation]}
-      className='mySwiper'
+      className='mySwiperHeader'
     >
       {/* <SwiperSlide>
         <img src={slide1} alt='slide1' />

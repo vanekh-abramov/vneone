@@ -1,0 +1,42 @@
+.container {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // width: 100dvw;
+  // height: 100dvh;
+  background-color: #3f3f3f;
+  opacity: 0.6;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.block {
+  z-index: 101;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // width: 40vw;
+  // height: 20vh;
+  width: 50vw;
+  height: 35vh;
+  padding: 25px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: auto;
+
+  p {
+    margin: 25px auto;
+    text-decoration: none;
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

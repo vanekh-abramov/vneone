@@ -1,3 +1,38 @@
+.mySwiperPopular {
+  position: relative;
+  padding: 15px 0;
+}
+
+@media (max-width: 750px) {
+  .mySwiperPopular {
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -4px;
+      width: 4px;
+      filter: drop-shadow(0 5px 2px rgb(6, 24, 224));
+      background-color: #000;
+      /* box-shadow: 10px 2px 5px red; */
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -4px;
+      width: 4px;
+      filter: drop-shadow(0 -5px 2px rgb(6, 24, 224));
+      background-color: #000;
+
+    }
+  }
+}
+
 .swiper {
   position: relative;
   margin-bottom: 50px;
@@ -8,7 +43,7 @@
   position: absolute;
   color: #000;
   top: 40%;
-  left: -20px;
+  left: -30px;
   cursor: pointer;
 }
 
@@ -17,11 +52,11 @@
   position: absolute;
   color: #000;
   top: 40%;
-  right: -20px;
+  right: -30px;
   cursor: pointer;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1120px) {
 
   .next {
     right: -10px;

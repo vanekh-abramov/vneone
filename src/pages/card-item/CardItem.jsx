@@ -7,10 +7,12 @@ import Popular from "../../components/popular/Popular";
 import cl from "classnames";
 import meshImg from "../../assets/size-mesh/size-mesh.png";
 import { createPortal } from "react-dom";
+import DemoErr from "../modals/demoErr/DemoErr";
 
 const CardItem = () => {
   const [sizeMesh, setSizeMesh] = useState(false);
   const [newData, setNewData] = useState();
+  const [toggleModal, setToggleModal] = useState(false);
   const url = useHref();
 
   useEffect(() => {
@@ -120,7 +122,16 @@ const CardItem = () => {
                   />
                 </svg>
               </div>
-              <button className={style.add_to_cart}>Добавить в корзину</button>
+              <button
+                className={style.add_to_cart}
+                onClick={() => setToggleModal(!toggleModal)}
+              >
+                Добавить в корзину
+              </button>
+              <DemoErr
+                setToggleModal={setToggleModal}
+                toggleModal={toggleModal}
+              />
             </div>
           </div>
         </div>
