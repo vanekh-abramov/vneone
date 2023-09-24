@@ -3,13 +3,14 @@ import style from "./Popular.module.scss";
 import SwiperUI from "../UI/swiper/SwiperUI";
 import { useState } from "react";
 import DemoErr from "./../../pages/modals/demoErr/DemoErr";
+import Title from "../UI/title/Title";
 
 const Popular = () => {
   const [toggleModal, setToggleModal] = useState(false);
 
   return (
     <div id='popular' className={style.popular}>
-      <h2 className={style.popular_title}>Популярное</h2>
+      <Title text={"Популярное"} />
       <SwiperUI />
       <button
         className={style.popular_button}

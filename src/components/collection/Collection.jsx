@@ -1,10 +1,11 @@
 import style from "./Collection.module.scss";
 import photo from "../../assets/collection/image.png";
+import Title from "../UI/title/Title";
 
 const Collection = () => {
   return (
     <div className={style.collection}>
-      <p className={style.title}>Вы в наших худи</p>
+      <Title text={"Вы в наших худи"} />
       <p className={style.sub_title}>
         Делайте фотографии в нашем мерче, отмечайте @vneone.official, и мы
         выложим сюда лучшие фото
