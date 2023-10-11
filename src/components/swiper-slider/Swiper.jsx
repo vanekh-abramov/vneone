@@ -8,8 +8,8 @@ import "swiper/css/navigation";
 import "../../index.css";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 
-import slide1 from "../../../src/assets/main-slider/slide1.png";
-import slide2 from "../../../src/assets/main-slider/slide2.png";
+// import slide1 from "../../../src/assets/main-slider/slide1.png";
+// import slide2 from "../../../src/assets/main-slider/slide2.png";
 import slide3 from "../../../src/assets/main-slider/slide3.jpg";
 import slide4 from "../../../src/assets/main-slider/slide4.jpg";
 import slide5 from "../../../src/assets/main-slider/slide5.jpg";

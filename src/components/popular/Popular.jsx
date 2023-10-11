@@ -4,6 +4,7 @@ import SwiperUI from "../UI/swiper/SwiperUI";
 import { useState } from "react";
 import DemoErr from "./../../pages/modals/demoErr/DemoErr";
 import Title from "../UI/title/Title";
+import { Link } from "react-router-dom";
 
 const Popular = () => {
   const [toggleModal, setToggleModal] = useState(false);
@@ -12,12 +13,13 @@ const Popular = () => {
     <div id='popular' className={style.popular}>
       <Title text={"Популярное"} />
       <SwiperUI />
-      <button
+      <Link
+        to={"/goods/"}
         className={style.popular_button}
-        onClick={() => setToggleModal(!toggleModal)}
+        // onClick={() => setToggleModal(!toggleModal)}
       >
         Каталог
-      </button>
+      </Link>
       <DemoErr toggleModal={toggleModal} setToggleModal={setToggleModal} />
     </div>
   );
