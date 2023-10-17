@@ -1,0 +1,201 @@
+.container {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 450px;
+  // left: 60%;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px 0 0 25px;
+  background-color: #fefefe;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.35);
+  animation-duration: 1s;
+  animation-name: slidein;
+
+  @media (max-width: 480px) {
+    width: 90%;
+    animation-name: mediaSlideIn;
+  }
+  .cart_head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 15%;
+      right: 5%;
+      display: block;
+      height: 2px;
+      background-color: #000000;
+    }
+    .back {
+      color: #141615;
+      font-family: Comfortaa;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+
+  .title {
+    margin-top: 5%;
+    color: #141615;
+    font-family: Comfortaa;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .items_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+
+    .item {
+      margin-top: 5%;
+      width: 350px;
+      height: 200px;
+      border-radius: 25px;
+      border: 2px solid black;
+      padding: 15px;
+      animation-duration: 2s;
+      animation-name: opacityIn;
+
+      @media (max-width: 480px) {
+        width: 90%;
+        // padding: 0;
+      }
+      .item_del {
+        cursor: pointer;
+      }
+      .item_content {
+        display: flex;
+        justify-content: space-between;
+        .item_image {
+          width: 140px;
+          border-radius: 25px;
+        }
+        .content_inner {
+          .item_title {
+            margin-top: 5px;
+
+            color: #000;
+            font-family: Comfortaa;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          .item_size_title {
+            margin-top: 5px;
+
+            color: #707070;
+            font-family: Comfortaa;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          .size {
+            margin-top: 5px;
+            color: #000;
+
+            font-family: Comfortaa;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          .count_title {
+            margin-top: 5px;
+
+            color: #707070;
+            font-family: Comfortaa;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+          .count_wrapper {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            .count {
+              width: 15px;
+              height: 15px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              overflow: hidden;
+              text-align: center;
+              outline: none;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            .increment {
+            }
+            .decrement {
+            }
+          }
+
+          .price {
+            margin-top: 10px;
+            color: #000;
+            font-family: Comfortaa;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 450px;
+  }
+}
+
+@keyframes mediaSlideIn {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes opacityIn {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -28,9 +28,6 @@ const PriceButton = ({
     <div className={style.price} style={myStyles}>
       {price}₽
     </div>
-    // <div className={style.price} style={{ width: elementWidth }}>
-    //   {price}₽
-    // </div>
   );
 };
 

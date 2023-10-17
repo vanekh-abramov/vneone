@@ -11,6 +11,7 @@
     margin-left: auto;
     margin-right: auto;
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 60px 0px;
@@ -52,8 +53,15 @@
       margin: auto;
       grid-area: control;
 
-      @media (max-width: 700px) {
-        display: none;
+      // @media (max-width: 700px) {
+      //   display: none;
+      // }
+
+      .basket {
+        cursor: pointer;
+      }
+      .profile {
+        cursor: pointer;
       }
     }
   }

@@ -9,7 +9,6 @@ import "./styles.css";
 
 import { Navigation } from "swiper/modules";
 
-import { data } from "../../../demo-data/data";
 import PriceButton from "../price-button/PriceButton";
 import { Link } from "react-router-dom";
 
@@ -18,9 +17,11 @@ import nextIcon from "../../../assets/popular-slider/nextIcon.svg";
 
 import { createPortal } from "react-dom";
 import { useEffect, useRef, useState } from "react";
+import { useSelector } from "react-redux";
 
 const SwiperUI = () => {
   const swiperRef = useRef();
+  const { data } = useSelector((state) => state.data);
 
   const [popularElement, setPopularElement] = useState();
   const [windowWidth, setWindowWidth] = useState(
@@ -58,19 +59,19 @@ const SwiperUI = () => {
         swiperRef.current = swiper;
       }}
     >
-      {data.map((i) => (
-        <SwiperSlide key={i.id}>
-          <Link to={"/goods/" + i.id} className={style.card_slider}>
-            <img className={style.image} src={i.image[0]} alt='' />
+      {data.map(({ id, image, price, name }) => (
+        <SwiperSlide key={id}>
+          <Link to={"/goods/" + id} className={style.card_slider}>
+            <img className={style.image} src={image[0]} alt='' />
             <PriceButton
-              price={i.price}
+              price={price}
               btnWidth={110}
               btnMargin={13}
               btnPadding={9}
               btnFontSize={19}
               btnMarginBottom={20}
             />
-            <p className={style.card_title}>{i.name}</p>
+            <p className={style.card_title}>{name}</p>
           </Link>
         </SwiperSlide>
       ))}

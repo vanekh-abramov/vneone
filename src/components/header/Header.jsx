@@ -1,8 +1,11 @@
 import style from "./Header.module.scss";
 import logo from "../../assets/logo/logo.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import Cart from "../cart/Cart";
 
 const Header = () => {
+  const [basketToggle, setBasketToggle] = useState(false);
   return (
     <header className={style.header}>
       <div className={style.container}>
@@ -10,7 +13,10 @@ const Header = () => {
           <img src={logo} alt='' className={style.logo_img} />
         </Link>
         <div className={style.header_nav}>
-          <div className={style.profile}>
+          <div
+            className={style.basket}
+            onClick={() => setBasketToggle(!basketToggle)}
+          >
             <svg
               width='50'
               height='50'
@@ -38,7 +44,7 @@ const Header = () => {
               />
             </svg>
           </div>
-          <div className={style.basket}>
+          {/* <div className={style.profile}>
             <svg
               width='50'
               height='50'
@@ -59,9 +65,12 @@ const Header = () => {
                 fill='white'
               />
             </svg>
-          </div>
+          </div> */}
         </div>
       </div>
+      {basketToggle && (
+        <Cart basketToggle={basketToggle} setBasketToggle={setBasketToggle} />
+      )}
     </header>
   );
 };
