@@ -58,7 +58,22 @@
       // }
 
       .basket {
+        position: relative;
         cursor: pointer;
+
+        .empty_check {
+          position: absolute;
+          right: 0;
+          top: 0;
+          text-align: center;
+          color: #fff;
+          font-weight: 700;
+          font-size: 25px;
+          border-radius: 50%;
+          width: 25px;
+          height: 25px;
+          background-color: #ff0606;
+        }
       }
       .profile {
         cursor: pointer;

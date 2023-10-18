@@ -13,11 +13,7 @@ const Popular = () => {
     <div id='popular' className={style.popular}>
       <Title text={"Популярное"} />
       <SwiperUI />
-      <Link
-        to={"/goods/"}
-        className={style.popular_button}
-        // onClick={() => setToggleModal(!toggleModal)}
-      >
+      <Link to={"/goods/"} className={style.popular_button}>
         Каталог
       </Link>
       <DemoErr toggleModal={toggleModal} setToggleModal={setToggleModal} />

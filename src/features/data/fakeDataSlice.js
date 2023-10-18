@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import photo1 from '../../assets/card/card_photo.png'
 
 const savedCart = localStorage.getItem('shoppingCart') !== null ? JSON.parse(localStorage.getItem('shoppingCart')) : []
+console.log(savedCart)
 
 const initialState = {
   data: [
@@ -140,7 +141,7 @@ const initialState = {
     }
   ],
   selectedData: [],
-  shoppingCart: savedCart
+  shoppingCart: savedCart,
 }
 
 export const fakeDataSlice = createSlice({
@@ -150,15 +151,17 @@ export const fakeDataSlice = createSlice({
     showSelected: (state, action) => {
       state.selectedData = state.data.find(item => item.id === action.payload)
     },
-    addToCart: (state, action) => {
+
+    addToCart: (state, { ...action }) => {
       const { selectedDataId, counterNumber, selectedSize } = action.payload
-      state.shoppingCart.push((state.data.find(item => item.id === selectedDataId)))
-      state.shoppingCart.find(item => item.id === selectedDataId)['count'] = counterNumber
-      state.shoppingCart.find(item => item.id === selectedDataId)['size'] = selectedSize
+      const currentItem = state.data.find(item => item.id === selectedDataId)
+      Object.assign(currentItem, { count: counterNumber, size: selectedSize })
+      state.shoppingCart = [...state.shoppingCart, currentItem]
       localStorage.setItem('shoppingCart', JSON.stringify(state.shoppingCart.map(item => item)))
     },
+
     deleteFromCart: (state, action) => {
-      state.shoppingCart.forEach((el, i) => el.id === action.payload && state.shoppingCart.splice(i, 1))
+      state.shoppingCart.splice(action.payload, 1)
       localStorage.setItem('shoppingCart', JSON.stringify(state.shoppingCart.map(item => item)))
     },
   }

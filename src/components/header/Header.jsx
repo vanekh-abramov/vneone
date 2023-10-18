@@ -3,9 +3,12 @@ import logo from "../../assets/logo/logo.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Cart from "../cart/Cart";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [basketToggle, setBasketToggle] = useState(false);
+  const { shoppingCart } = useSelector((state) => state.data);
+
   return (
     <header className={style.header}>
       <div className={style.container}>
@@ -17,6 +20,9 @@ const Header = () => {
             className={style.basket}
             onClick={() => setBasketToggle(!basketToggle)}
           >
+            {shoppingCart.length ? (
+              <div className={style.empty_check}>{shoppingCart.length}</div>
+            ) : null}
             <svg
               width='50'
               height='50'

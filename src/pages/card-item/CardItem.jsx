@@ -1,12 +1,12 @@
 import style from "./CardItem.module.scss";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useHref } from "react-router-dom";
 
 import PriceButton from "./../../components/UI/price-button/PriceButton";
 import Popular from "../../components/popular/Popular";
 import Title from "./../../components/UI/title/Title";
-import DemoErr from "../modals/demoErr/DemoErr";
+// import DemoErr from "../modals/demoErr/DemoErr";
 import SizeMesh from "../modals/sizeMesh/SizeMesh";
 
 import cl from "classnames";
@@ -17,10 +17,11 @@ import arrayL from "../../assets/card/arrayL.svg";
 
 import { useDispatch, useSelector } from "react-redux";
 import { showSelected, addToCart } from "../../features/data/fakeDataSlice";
+import SuccessAlert from "../modals/successAlert/SuccessAlert";
 
 const CardItem = () => {
   const [sizeMesh, setSizeMesh] = useState(false);
-  const [toggleModal, setToggleModal] = useState(false);
+  const [alertToggleModal, setAlertToggleModal] = useState(false);
   const url = useHref();
 
   const { selectedData, shoppingCart } = useSelector((state) => state.data);
@@ -55,18 +56,17 @@ const CardItem = () => {
     counterNumber,
     selectedSize,
   };
-
   const addingToCart = () => {
     dispatch(addToCart(selectedParams));
-    return shoppingCart;
+    setAlertToggleModal(!alertToggleModal);
+    console.log(addToCart());
+    console.log(selectedParams);
+    // return shoppingCart;
   };
-  console.log(shoppingCart);
-
   return (
     <div className={style.container}>
       {sizeMesh && <SizeMesh setSizeMesh={setSizeMesh} meshImg={meshImg} />}
       <Title text={titleName} />
-
       <div className={style.content}>
         <img className={style.content_image} src={imageSrc} alt={titleName} />
         <div className={style.content_inner}>
@@ -150,21 +150,26 @@ const CardItem = () => {
                   name='counter'
                   id='counter'
                   onChange={(e) => currentCount(e)}
-                  value={counterNumber}
+                  value={counterNumber || 1}
                 />
                 <img src={arrayR} alt='arrayR' onClick={() => increment()} />
               </div>
               <button
                 className={style.add_to_cart}
                 onClick={addingToCart}
-                // onClick={() => setToggleModal(!toggleModal)}
+                // onClick={() => setAlertToggleModal(!AlertToggleModal)}
               >
                 Добавить в корзину
               </button>
-              <DemoErr
+              <SuccessAlert
+                setAlertToggleModal={setAlertToggleModal}
+                alertToggleModal={alertToggleModal}
+                alertText={"Товар отправился в корзину !!!"}
+              />
+              {/* <DemoErr
                 setToggleModal={setToggleModal}
                 toggleModal={toggleModal}
-              />
+              /> */}
             </div>
           </div>
         </div>

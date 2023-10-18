@@ -1,21 +1,29 @@
 import style from "./Cart.module.scss";
 import prev from "../../assets/popular-slider/prevIcon.svg";
 import del from "../../assets/card/del.jpg";
-import cardPhoto from "../../assets/card/card_photo.png";
 
 import { createPortal } from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { deleteFromCart } from "../../features/data/fakeDataSlice";
+import { useMemo } from "react";
 
 const Cart = ({ basketToggle, setBasketToggle }) => {
   const { shoppingCart } = useSelector((state) => state.data);
   const dispatch = useDispatch();
 
-  const removeItem = (id) => {
-    dispatch(deleteFromCart(id));
+  const removeItem = (keyID) => {
+    console.log(keyID);
+    dispatch(deleteFromCart(keyID));
   };
-  console.log(shoppingCart);
+
+  const newCart = shoppingCart?.map(({ price, count }) => price * count);
+  const totalPrice =
+    newCart.length !== 0
+      ? newCart.reduce(
+          (accumulator, currentValue) => accumulator + currentValue
+        )
+      : 0;
 
   return (
     <>
@@ -38,7 +46,7 @@ const Cart = ({ basketToggle, setBasketToggle }) => {
                       className={style.item_del}
                       src={del}
                       alt='delete'
-                      onClick={() => removeItem(id)}
+                      onClick={() => removeItem(keyID)}
                     />
                     <div className={style.item_content}>
                       <Link to={"/goods/" + id}>
@@ -58,12 +66,16 @@ const Cart = ({ basketToggle, setBasketToggle }) => {
                         <div className={style.count_wrapper}>
                           <div className={style.count}>{count}</div>
                         </div>
-                        <p className={style.price}>{price}$</p>
+                        <p className={style.price}>{price * count}$</p>
                       </div>
                     </div>
                   </div>
                 )
               )}
+            </div>
+            <div className={style.bottom_container}>
+              <p className={style.total_price}>Итого: {totalPrice}$</p>
+              <button className={style.buy_btn}>Оформить заказ</button>
             </div>
           </div>,
           document.body

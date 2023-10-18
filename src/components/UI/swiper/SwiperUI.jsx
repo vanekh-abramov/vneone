@@ -27,7 +27,7 @@ const SwiperUI = () => {
   const [windowWidth, setWindowWidth] = useState(
     document.documentElement.clientWidth
   );
-  const [slidesPV, setSlidesPerView] = useState(5);
+  const [slidesPerView, setSlidesPerView] = useState(5);
 
   const setSlides = () => {
     if (windowWidth > 1200) {
@@ -52,7 +52,7 @@ const SwiperUI = () => {
   return (
     <Swiper
       spaceBetween={20}
-      slidesPerView={slidesPV}
+      slidesPerView={slidesPerView}
       modules={[Navigation]}
       className='mySwiperPopular'
       onSwiper={(swiper) => {
@@ -71,7 +71,7 @@ const SwiperUI = () => {
               btnFontSize={19}
               btnMarginBottom={20}
             />
-            <p className={style.card_title}>{name}</p>
+            <p className={style.card_title}>{name + " " + id}</p>
           </Link>
         </SwiperSlide>
       ))}
