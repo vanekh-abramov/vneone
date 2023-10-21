@@ -6,7 +6,6 @@ import { createPortal } from "react-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { deleteFromCart } from "../../features/data/fakeDataSlice";
-import { useMemo } from "react";
 
 const Cart = ({ basketToggle, setBasketToggle }) => {
   const { shoppingCart } = useSelector((state) => state.data);

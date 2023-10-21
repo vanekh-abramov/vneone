@@ -1,5 +1,6 @@
 import style from "./Footer.module.scss";
-import logo from "../../assets/logo/logo.svg";
+// import logo from "../../assets/logo/logo.svg";
+import logo from "../../assets/svg/logo-no-background.svg";
 import inst from "../../assets/footer/instagram_black_logo.svg";
 import vk from "../../assets/footer/icons8-vk.svg";
 
@@ -12,8 +13,8 @@ const Footer = () => {
           <img src={inst} alt='' className={style.social_logos} />
           <img src={vk} alt='' className={style.social_logos} />
         </div>
-        <p className={style.footer_year}>© 2023 vneone.com</p>
-        <p className={style.email}>E-MAIL:support@vneone.com</p>
+        <p className={style.footer_year}>© 2023 companyname</p>
+        <p className={style.email}>E-MAIL:support@gmail.com</p>
       </div>
     </div>
   );

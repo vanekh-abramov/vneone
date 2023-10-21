@@ -8,9 +8,11 @@ import "swiper/css/navigation";
 import "../../index.css";
 import { Autoplay, EffectFade, Pagination, Navigation } from "swiper/modules";
 
-import slide3 from "../../../src/assets/main-slider/slide3.jpg";
-import slide4 from "../../../src/assets/main-slider/slide4.jpg";
-import slide5 from "../../../src/assets/main-slider/slide5.jpg";
+import slide1 from "../../../src/assets/main-slider/slider1.jpg";
+import slide2 from "../../../src/assets/main-slider/slider2.jpg";
+// import slide3 from "../../../src/assets/main-slider/slide3.jpg";
+// import slide4 from "../../../src/assets/main-slider/slide4.jpg";
+// import slide5 from "../../../src/assets/main-slider/slide5.jpg";
 
 const SwiperSlider = () => {
   return (
@@ -25,14 +27,14 @@ const SwiperSlider = () => {
       className='mySwiperHeader'
     >
       <SwiperSlide>
-        <img src={slide3} alt='slide3' />
+        <img src={slide1} alt='slide1' />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={slide4} alt='slide4' />
+        <img src={slide2} alt='slide2' />
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <img src={slide5} alt='slide5' />
-      </SwiperSlide>
+      </SwiperSlide> */}
     </Swiper>
   );
 };

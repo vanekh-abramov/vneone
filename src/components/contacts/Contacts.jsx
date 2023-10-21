@@ -6,8 +6,8 @@ const Contacts = () => {
   return (
     <div className={style.contacts}>
       <div className={style.youtube}>
-        <p className={style.title}>YouTube канал vneone official</p>
-        <iframe
+        <p className={style.title}>YouTube канал</p>
+        {/* <iframe
           className={style.video}
           src='https://vk.com/video_ext.php?oid=-60191566&id=456240149&hd=1&autoplay=1'
           width='560'
@@ -15,6 +15,16 @@ const Contacts = () => {
           allow='encrypted-media; fullscreen; picture-in-picture;'
           frameBorder='0'
           // allowfullScreen
+        ></iframe> */}
+        <iframe
+          className={style.video}
+          width='560'
+          height='315'
+          src='https://www.youtube.com/embed/9P9lkpk2lVE'
+          title='Гонки на Mac Pro: тест скорости Mac Pro 2023 на M2 Ultra - какой быстрее: старый или новый?'
+          frameborder='0'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          allowfullscreen
         ></iframe>
       </div>
       <div className={style.social_links}>

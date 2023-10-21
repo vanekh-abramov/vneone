@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import photo1 from '../../assets/card/card_photo.png'
+// import photo1 from '../../assets/card/card_photo.png'
+import photo1 from '../../assets/card/out_photo.jpg';
 
 const savedCart = localStorage.getItem('shoppingCart') !== null ? JSON.parse(localStorage.getItem('shoppingCart')) : []
 console.log(savedCart)

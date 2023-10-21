@@ -1,5 +1,7 @@
 import style from "./Header.module.scss";
-import logo from "../../assets/logo/logo.svg";
+// import logo from "../../assets/logo/logo.svg";
+import logo from "../../assets/svg/logo-no-background.svg";
+
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Cart from "../cart/Cart";
