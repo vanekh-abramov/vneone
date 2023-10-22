@@ -20,10 +20,10 @@ const Contacts = () => {
           className={style.video}
           width='560'
           height='315'
-          src='https://www.youtube.com/embed/9P9lkpk2lVE'
-          title='Гонки на Mac Pro: тест скорости Mac Pro 2023 на M2 Ultra - какой быстрее: старый или новый?'
+          src='https://www.youtube.com/embed/h5ke4Ka4_mg'
+          title='Nathan Evans - There once was a ship that put to sea (Wellerman) (Lyrics)'
           frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+          allow='encrypted-media; fullscreen; picture-in-picture;'
           allowfullscreen
         ></iframe>
       </div>
