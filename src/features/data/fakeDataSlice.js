@@ -9,134 +9,134 @@ const initialState = {
   data: [
     {
       id: 1,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 2,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 3,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 4,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 5,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 6,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 7,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 8,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 9,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 10,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 11,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 12,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 13,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 14,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 15,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 16,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 17,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 18,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     },
     {
       id: 19,
-      name: 'Неоновое худи',
-      desc: '•Мы отобрали качественную турецкую ткань «футер» в соотношении 80% - хлопка и 20% - полиэстера, безопасный гибкий неон, плотный материал «оксфорд» •Изготавливаем неоновые принты любой сложности. •Патч с неоновым принтом крепится на липучках, его можно легко снять перед стиркой.',
+      name: 'Lorem ipsum',
+      desc: '      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi explicabo ipsam nihil autem voluptas accusantium, sit molestias natus culpa vero minima blanditiis maxime eum, obcaecati commodi? Ipsam, qui odit?',
       price: 1000,
       image: [photo1, photo1]
     }

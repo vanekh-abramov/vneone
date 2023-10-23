@@ -1,10 +1,13 @@
 import React from "react";
 import style from "./Catalog.module.scss";
 import Title from "./../../components/UI/title/Title";
-import { data } from "../../demo-data/data";
+// import { data } from "../../demo-data/data";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Catalog = () => {
+  const { data } = useSelector((state) => state.data);
+
   return (
     <div className={style.container}>
       <Title text={"Каталог"} />

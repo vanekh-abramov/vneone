@@ -13,8 +13,10 @@ const Footer = () => {
           <img src={inst} alt='' className={style.social_logos} />
           <img src={vk} alt='' className={style.social_logos} />
         </div>
-        <p className={style.footer_year}>© 2023 companyname</p>
-        <p className={style.email}>E-MAIL:support@gmail.com</p>
+        <div className={style.teg_block}>
+          <p className={style.footer_year}>© 2023 companyname</p>
+          <p className={style.email}>E-MAIL:support@gmail.com</p>
+        </div>
       </div>
     </div>
   );

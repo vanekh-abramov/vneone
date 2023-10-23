@@ -22,9 +22,9 @@ const Contacts = () => {
           height='315'
           src='https://www.youtube.com/embed/h5ke4Ka4_mg'
           title='Nathan Evans - There once was a ship that put to sea (Wellerman) (Lyrics)'
-          frameborder='0'
-          allow='encrypted-media; fullscreen; picture-in-picture;'
-          allowfullscreen
+          frameBorder='0'
+          allow='encrypted-media; picture-in-picture;'
+          allowFullScreen
         ></iframe>
       </div>
       <div className={style.social_links}>

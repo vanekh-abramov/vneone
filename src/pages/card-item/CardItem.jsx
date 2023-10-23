@@ -24,7 +24,7 @@ const CardItem = () => {
   const [alertToggleModal, setAlertToggleModal] = useState(false);
   const url = useHref();
 
-  const { selectedData, shoppingCart } = useSelector((state) => state.data);
+  const { selectedData } = useSelector((state) => state.data);
   const dispatch = useDispatch();
 
   //filtering data for current url path
