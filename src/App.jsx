@@ -12,7 +12,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route key={1} path='/' element={<Home />}></Route>
+        <Route key={1} path='*' element={<Home />}></Route>
         <Route key={2} path='/goods/:id' element={<CardItem />}></Route>
         <Route key={3} path='/goods' element={<Catalog />}></Route>
       </Routes>
